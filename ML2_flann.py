@@ -70,7 +70,7 @@ for query_file in tqdm(query_files, desc="Processing Query Images", unit="query"
     results.append(f"query/{query_file} database/{best_match}")
 
 # 결과 저장
-with open('answer1.txt', 'w') as f:
+with open('answer.txt', 'w') as f:
     for result in results:
         f.write(result + '\n')
 
