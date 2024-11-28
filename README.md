@@ -2,7 +2,7 @@
 
 1) sift: 너무 오래 걸려 시행 불가
 
-2) orb -> bfmatcher - crossCheck: 유사도 측정 방법 모름
+2) orb -> BFMatcher(crossCheck=True): 유사도 측정 방법 모름
 
 3) orb -> BFMatcher(defalt) -> knnmatch -> k=2 ratio test: ratio가 0.75일 때 정확도 0.87, 0.8일 때 0.87, 0.6일 때 0.82
 
