@@ -1,4 +1,4 @@
-0) sift: 
+0) sift;
 너무 오래 걸려 시행 불가
 
 1) orb -> bfmatcher - crossCheck:
