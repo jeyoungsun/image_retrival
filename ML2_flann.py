@@ -21,11 +21,11 @@ def get_image_files(directory):
 query_dir = 'C:/Users/jdudt/OneDrive - kaist.ac.kr/pytorch/ML2/takehome_dataset/query/'
 database_dir = 'C:/Users/jdudt/OneDrive - kaist.ac.kr/pytorch/ML2/takehome_dataset/database/'
 
-#이미지 가져오기
+# 이미지 가져오기
 query_files = get_image_files(query_dir)
 database_files = get_image_files(database_dir)
 
-#결과 리스트
+# 결과 리스트
 results = []
 
 # FLANN 매개변수 설정 (LSH 기반)
