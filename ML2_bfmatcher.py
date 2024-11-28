@@ -42,10 +42,9 @@ for query_file in tqdm(query_files, desc="Processing Query Images", unit="query"
        
         kp2, des2 = compute_orb(database_path)
 
-        #bf = cv.BFMatcher()
-        bf = cv.BFMatcher(cv.NORM_HAMMING2)
+        bf = cv.BFMatcher()
         matches = bf.knnMatch(des1, des2, k=2)
-
+        
         good = []
 
         for m, n in matches:  
