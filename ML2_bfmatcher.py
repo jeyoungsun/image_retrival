@@ -41,7 +41,7 @@ for query_file in tqdm(query_files, desc="Processing Query Images", unit="query"
         database_path = os.path.join(database_dir, database_file)
        
         kp2, des2 = compute_orb(database_path)
-
+        
         bf = cv.BFMatcher()
         matches = bf.knnMatch(des1, des2, k=2)
         
@@ -50,10 +50,6 @@ for query_file in tqdm(query_files, desc="Processing Query Images", unit="query"
         for m, n in matches:  
             if m.distance < 0.75 * n.distance:
                 good.append([m])
-
-        #for m, n, o in matches: 
-            #if m.distance < 0.75 * n.distance and n.distance < 0.75 * o.distance:
-                #good.append([m])
 
         total_number = len(good)
 
